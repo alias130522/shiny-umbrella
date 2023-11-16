@@ -153,3 +153,5 @@ class TestBooksCollector:
         collector.add_book_in_favorites('Фредди')
         list_favorites = collector.get_list_of_favorites_books()
         assert list_favorites == ['Фредди']
+
+print()
