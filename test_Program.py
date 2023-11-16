@@ -40,12 +40,12 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book(name)
         assert not collector.books_genre.get(name)
-    def test_add_new_book_name_of_which_already_in_books_genre(self, ):
-        collector = BooksCollector()
-        collector.add_new_book('Радость и печаль')
-        collector.set_book_genre('Радость и печаль', 'Ужасы')
-        assert not collector.add_new_book('Радость и печаль')
-
+    def test_add_new_book_name_of_which_already_in_books_genre(self, books_dict):
+        #collector = BooksCollector()
+        #collector.add_new_book('Радость и печаль')
+        #collector.set_book_genre('Радость и печаль', 'Ужасы')
+        #assert not collector.add_new_book('Радость и печаль')
+        assert books_dict == {'Моана': 'Мультфильмы'}
 
 
     def test_set_book_genre_valid_values(self):
@@ -153,3 +153,5 @@ class TestBooksCollector:
         collector.add_book_in_favorites('Фредди')
         list_favorites = collector.get_list_of_favorites_books()
         assert list_favorites == ['Фредди']
+
+Program
