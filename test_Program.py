@@ -154,4 +154,4 @@ class TestBooksCollector:
         list_favorites = collector.get_list_of_favorites_books()
         assert list_favorites == ['Фредди']
 
-print()
+Program
